@@ -19,11 +19,11 @@ Template Name: +sidebar
 
 		 <?php	
  			if ( is_home() ) :
-  				get_sidebar( 'home' );
+  				get_sidebar( 'home-sidebar' );
 			 elseif ( is_404() ) :
   				get_sidebar( '404' );
 			 else :
-  				get_sidebar( 'home' );
+  				get_sidebar( 'page-sidebar' );
 			 endif;
 		 ?>
 
