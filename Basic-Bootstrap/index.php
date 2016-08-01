@@ -4,7 +4,7 @@
 					<div class = "col-md-9">
 						<div class = "panel panel-default panel-body">
 
-							<?php $loop = new WP_Query( array( 'post_type' => 'evento', 'posts_per_page' => -1 ) ); ?>
+							<?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
 							<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 								<h2><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
