@@ -21,7 +21,7 @@ Template Name: +sidebar
  			if ( is_home() ) :
   				get_sidebar( 'home-sidebar' );
 			 elseif ( is_404() ) :
-  				get_sidebar( '404' );
+  				get_sidebar( '404-sidebar' );
 			 else :
   				get_sidebar( 'page-sidebar' );
 			 endif;
